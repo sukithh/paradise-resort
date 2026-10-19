@@ -19,18 +19,20 @@ export default function Navbar() {
           Experiences
         </a>
 
-        <a href="/gallery" className="transition hover:text-gray-300">
-          Gallery
-        </a>
-
+       
         <a href="/contact" className="transition hover:text-gray-300">
           Contact
         </a>
       </div>
 
-      <button className="rounded-full bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200">
-        Book Now
-      </button>
+      
+<a
+  href="/booking"
+  className="rounded-full bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-200"
+>
+  Book Now
+</a>
+
 
     </nav>
   );

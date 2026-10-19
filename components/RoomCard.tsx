@@ -22,7 +22,7 @@ export default function RoomCard({
 
       <div className="p-6">
 
-        <h3 className="text-2xl font-semibold">
+        <h3 className="text-2xl font-semibold text-black">
           {name}
         </h3>
 
@@ -32,12 +32,12 @@ export default function RoomCard({
 
         <div className="mt-6 flex items-center justify-between">
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold text-black">
             {price}
           </p>
 
           <a
-  href="#booking"
+  href="/booking"
   className="rounded-full bg-black px-5 py-2 text-white transition hover:bg-gray-800"
 >
   View Room

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import FeatureCard from "../components/FeatureCard";
 import RoomCard from "../components/RoomCard";
-import BookingForm from "../components/BookingForm";
+
 
 
 
@@ -133,15 +133,24 @@ export default function Home() {
 </section>
 
 {/* Booking Section */}
-<section id="booking" className="bg-gray-100 px-8 py-20">
 
-  <div className="mx-auto max-w-4xl">
 
-    <BookingForm />
+<footer className="border-t border-amber-100 bg-neutral-950 px-6 py-8 text-center text-sm text-gray-300">
+  <p className="font-semibold tracking-wide text-white">
+    Paradise Resort
+  </p>
 
-  </div>
+  <p className="mt-2">
+    Escape to Paradise. Experience Luxury.
+  </p>
 
-</section>
+  <div className="mx-auto my-5 h-px max-w-xs bg-amber-700/60" />
+
+  <p>
+    © {new Date().getFullYear()} Paradise Resort.
+    All rights reserved.
+  </p>
+</footer>
 
     </main>
   );

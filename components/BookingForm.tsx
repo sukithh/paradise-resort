@@ -62,14 +62,14 @@ const handleBooking = () => {
   setMessage("Your booking has been confirmed successfully!");
 };
   return (
-    <div className="rounded-3xl bg-white p-8 shadow-xl">
+    <div className="rounded-3xl border border-amber-100 bg-white p-6 shadow-[0_20px_60px_rgba(0,0,0,0.08)] sm:p-10">
 
       <div className="mb-8 text-center">
         <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gray-500">
           Reservations
         </p>
 
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold text-black sm:text-4xl">
           Book Your Stay
         </h2>
 
@@ -81,7 +81,7 @@ const handleBooking = () => {
       <div className="grid gap-6 md:grid-cols-2">
 
         <div>
-          <label className="mb-2 block font-medium">
+          <label className="mb-2 block font-medium text-black">
             Check-in
           </label>
 
@@ -90,12 +90,12 @@ const handleBooking = () => {
             min={today}
             value={checkIn}
             onChange={(e) => setCheckIn(e.target.value)}
-            className="w-full rounded-xl border border-gray-300 px-4 py-3"
+            className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 outline-none transition focus:border-amber-600 focus:bg-white focus:ring-2 focus:ring-amber-100"
           />
         </div>
 
         <div>
-          <label className="mb-2 block font-medium">
+          <label className="mb-2 block font-medium text-black">
             Check-out
           </label>
 
@@ -104,19 +104,19 @@ const handleBooking = () => {
             min={checkIn || today}
             value={checkOut}
             onChange={(e) => setCheckOut(e.target.value)}
-            className="w-full rounded-xl border border-gray-300 px-4 py-3"
+            className="w-full rounded-xl border border-black-300 px-4 py-3"
           />
         </div>
 
         <div>
-          <label className="mb-2 block font-medium">
+          <label className="mb-2 block font-medium text-black">
             Guests
           </label>
 
           <select
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
-            className="w-full rounded-xl border border-gray-300 px-4 py-3"
+            className="w-full rounded-xl border border-black-300 px-4 py-3"
           >
             <option value="1">1 Guest</option>
             <option value="2">2 Guests</option>
@@ -128,14 +128,14 @@ const handleBooking = () => {
         </div>
 
         <div>
-          <label className="mb-2 block font-medium">
+          <label className="mb-2 block font-medium text-black">
             Room Type
           </label>
 
           <select
             value={room}
             onChange={(e) => setRoom(e.target.value)}
-            className="w-full rounded-xl border border-gray-300 px-4 py-3"
+            className="w-full rounded-xl border border-black-300 px-4 py-3 "
           >
             <option>Deluxe Garden Room</option>
             <option>Luxury Suite</option>
@@ -145,28 +145,30 @@ const handleBooking = () => {
 
       </div>
 
-   <button
+  
+<button
   type="button"
   onClick={handleAvailability}
-  className="mt-8 w-full rounded-full bg-black px-6 py-4 font-semibold text-white transition hover:bg-gray-800"
+  className="mt-8 w-full rounded-full bg-amber-700 px-6 py-4 font-semibold text-white shadow-md transition duration-300 hover:bg-amber-800"
 >
   Check Availability
 </button>
+ 
 {message && !confirmed && checkIn && checkOut && (
   <button
     type="button"
     onClick={handleBooking}
-    className="mt-4 w-full rounded-full bg-green-600 px-6 py-4 font-semibold text-white transition hover:bg-green-700"
+    className="mt-4 w-full rounded-full bg-emerald-700 px-6 py-4 font-semibold text-white transition duration-300 hover:bg-emerald-800"
   >
     Confirm Booking
   </button>
 )}
 <div className="mt-6 text-center">
-  <p className="text-sm text-gray-500">
+  <p className="text-sm text-black-500">
     Total Price
   </p>
 
-  <p className="mt-1 text-3xl font-bold">
+  <p className="mt-2 text-4xl font-bold tracking-tight text-amber-800">
     ₹{calculateTotal().toLocaleString("en-IN")}
   </p>
 </div>
@@ -177,7 +179,7 @@ const handleBooking = () => {
       ✓
     </div>
 
-    <h3 className="text-2xl font-bold text-green-800">
+    <h3 className="text-2xl font-bold text-green-800 sm:text-3xl">
       Booking Confirmed!
     </h3>
     <p className="mt-2 text-sm font-semibold tracking-wider text-green-700">
@@ -190,23 +192,23 @@ const handleBooking = () => {
 
     <div className="mt-6 space-y-2 text-left">
       <p>
-        <span className="font-semibold">Room:</span> {room}
+        <span className="font-semibold text-black">Room:</span> {room}
       </p>
 
       <p>
-        <span className="font-semibold">Guests:</span> {guests}
+        <span className="font-semibold text-black">Guests:</span> {guests}
       </p>
 
       <p>
-        <span className="font-semibold">Check-in:</span> {checkIn}
+        <span className="font-semibold text-black">Check-in:</span> {checkIn}
       </p>
 
       <p>
-        <span className="font-semibold">Check-out:</span> {checkOut}
+        <span className="font-semibold text-black">Check-out:</span> {checkOut}
       </p>
 
       <p>
-        <span className="font-semibold">Total:</span>{" "}
+        <span className="font-semibold text-black">Total:</span>{" "}
         ₹{calculateTotal().toLocaleString("en-IN")}
       </p>
     </div>
