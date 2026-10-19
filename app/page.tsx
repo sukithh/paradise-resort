@@ -20,12 +20,9 @@ export default function Home() {
         <Navbar />
 
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 pb-8 pt-28 text-center text-white sm:px-6 sm:pt-32 lg:px-8">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] sm:text-sm sm:tracking-[0.3em]">
-            Welcome to Paradise
-          </p>
-
+         
           <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Escape to Paradise
+            Welcome to Paradise
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-white/90 sm:mt-6 sm:text-lg md:text-xl">

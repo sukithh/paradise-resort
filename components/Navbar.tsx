@@ -42,7 +42,7 @@ export default function Navbar() {
         {/* Desktop booking button */}
         <a
           href="/booking"
-          className="hidden shrink-0 rounded-full bg-white px-5 py-3 font-semibold text-black transition hover:bg-amber-400 sm:inline-flex lg:px-6"
+         className="hidden shrink-0 rounded-full bg-white px-5 py-3 font-semibold text-black transition hover:bg-amber-400 lg:inline-flex lg:px-6"
         >
           Book Now
         </a>
