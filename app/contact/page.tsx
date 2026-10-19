@@ -174,11 +174,8 @@ export default function ContactPage() {
                   href="tel:+919876543210"
                   className="mt-1 inline-block text-sm text-gray-400 transition hover:text-amber-500"
                 >
-                  +91 98765 43210
+                  +91 9035517226
                 </a>
-                <p className="mt-1 text-xs text-gray-500">
-                  Example number — replace before launch
-                </p>
               </div>
             </div>
 
@@ -193,11 +190,8 @@ export default function ContactPage() {
                   href="mailto:info@paradiseresort.example"
                   className="mt-1 inline-block break-all text-sm text-gray-400 transition hover:text-amber-500"
                 >
-                  info@paradiseresort.example
+                  sukithmjain@gmail.com
                 </a>
-                <p className="mt-1 text-xs text-gray-500">
-                  Example address — replace before launch
-                </p>
               </div>
             </div>
           </div>
